@@ -1,0 +1,158 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  width: 100vw;
+  height: auto;
+  color: var(--main-white);
+}
+:root {
+    --main-white: #f0f0f0;
+    --main-red: #be3144;
+    --main-blue: #45567d;
+    --main-gray: #303841;
+}
+
+@media (max-width: 61.25em)
+html {
+    font-size: 58%;
+}
+
+/* NAVIGATION AREA */
+.nav {
+  background: var(--main-red);
+  display: flex;
+  width: 100%;
+  padding: 2rem;
+  position: fixed;
+}
+
+.nav ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  width: 100%;
+ justify-content: flex-end; 
+ margin-right: 50px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--main-white);
+}
+
+/* WELCOME SECTION */
+.welcome-section{
+  background: var(--main-gray);
+  height: 100vh;
+  text-align: center;
+  padding: 15rem 2rem;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+.welcome-section p{
+  font-style: italic;
+  font-size: 2rem;
+  color: var(--main-red);
+  font-weight: 400;
+} 
+
+/* PROJECTS SECTION */
+
+.projects-section{
+  text-align: center;
+  background: var(--main-blue);
+  padding: 10rem 2rem;
+
+}
+
+#project-section-header{
+  font-size: 2.5rem;
+  max-width: 640px;
+  margin: 0 auto 6rem auto;
+  border-bottom: 2px solid var(--main-white);
+}
+.projects-grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  grid-gap: 4rem;
+}
+
+.project-tile{
+  object-fit: cover;
+  height: calc(100% - 6.8rem);
+  width: 100%;
+}
+img{
+  overflow-clip-margin: content-box;
+  display: block;
+}
+
+.project-title
+{
+  background: var(--main-gray);
+  font-size: 1.2rem;
+  font-weight: 400;
+  padding: 1.2rem;
+}
+.btn{
+ background: var(--main-gray);
+ padding: 0.5rem 1.5rem;
+ font-weight: normal; 
+ font-size: 1.4rem;
+}
+.btn:hover{
+  background: var(--main-red);
+}
+
+/* PROJECTS SECTION */
+
+.contact-section{
+  background: var(--main-gray);
+  text-align: center;
+  padding: 10rem 2rem;
+}
+.contact-section h2{
+  font-size: 4rem;
+}
+.contact-section p{
+  margin-bottom: 20px;
+  font-style: italic;
+}
+.contact-links{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 25px;
+  font-size: 1.5rem;
+}
+i{
+  margin-right: 5px;
+}
+
+/* FOOTER SECTION */
+
+footer{
+  padding: 5rem 2rem;
+  background: var(--main-gray);
+  display: flex;
+  justify-content: space-evenly;
+  border-top: 4px solid var(--main-red);
+}
+
+
+
+
+
